@@ -39,7 +39,7 @@ Standard QWERTY layout with media controls via rotary encoder.
 | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  | BSPC|DEL|  PG_UP  |
 | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \     |  PG_DN  |
 | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |    ENTER     |  DEL    |
-|SHIFT|\|  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |    SHIFT   |   UP   |  HOME   |
+|SHIFT|\|  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |    SHIFT   |   UP   |  [RGB]  |
 |  CTL  |  WIN  |  ALT  |     SPACE      |    SPACE    |  ALT  |  CTRL  |  LEFT  |  DOWN  |  RIGHT  |
 ```
 
@@ -54,7 +54,7 @@ RGB lighting controls and function keys. Access by holding the rightmost key in 
 | BT1 | HUE+| SAT+| BRI+| SPD+|  FX+|  —  |  —  |  —  |  —  |  —  |  —  |  —  |  —          | PG_DN |
 | BT2 | HUE-| SAT-| BRI-| SPD-|  FX-|  —  |  —  |  —  |  —  |  —  |  —  |  —                |  DEL |
 | BT3 |  —  | BTCLR| BTCLR|  —  |  —  |  —  | MUTE|  —  |  —  |  —  |  —  |  —  | VOL↑        |  —   |
-|STUDIO|RGBTOG| LALT| SPACE| PLAY/PAUSE | SPACE | RALT | RCTRL  | PREV | VOL↓ | NEXT |
+|STUDIO|RGBTOG|  —  | SPACE| PLAY/PAUSE | SPACE | RALT | RCTRL  | PREV | VOL↓ | NEXT |
 ```
 
 **Key Features**:
@@ -71,7 +71,7 @@ RGB lighting controls and function keys. Access by holding the rightmost key in 
 System controls and advanced Bluetooth management. Access via combo keys (positions 60+61).
 
 ```
-| BT CLR | BT1 | BT2 | BT3 | BT4 | BT5 | OUT_BT | OUT_USB | STU |   –  |   –  |   –  |BOOTLDR| TRANS | TRANS |   –   |
+| BT CLR | BT1 | BT2 | BT3 | BT4 | BT5 | OUT_BT | OUT_USB | STU |   –  |   –  |   –  |BOOTLDR|   –   |   –   |   –   |
 |  BT1   | BT2 | BT3 | BT4 | BT5 |   –  | OUT_BT | OUT_USB | STU |   –  |   –  |   –  |   –  |    –    |   –     |
 |  RGBTG | FX+ | HUE+| SAT+| BRI+| SPD+|   –    |   –     |   – |   –  |   –  |   –  |   –  |   –     |
 |   –    |  –  |  –  |  –  |  –  |  –  |  –     |  –      |  –  |  –   |  –   |  –   |  –   |   –     |   –     |
@@ -104,7 +104,7 @@ ZMK Studio allows you to edit your keymap in real-time without rebuilding firmwa
 3. Edit keymaps visually
 4. Changes are saved to keyboard EEPROM
 
-> **Note**: ZMK Studio changes are temporary. To make them permanent, update [config/athena.keymap](config/athena.keymap) and rebuild.
+> **Note**: ZMK Studio changes are saved directly to the keyboard's flash and persist across power cycles.
 
 ### Editing the Keymap File
 
