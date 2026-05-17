@@ -47,13 +47,13 @@ Standard QWERTY layout with media controls via rotary encoder.
 
 ### Layer 1: RGB
 
-RGB lighting controls and function keys. Access by holding the rightmost key in row 4.
+RGB lighting controls and function keys. Access by holding **[RGB]** (rightmost key in row 4).
 
 ```
 | BT0 |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |  DEL | BSPC | PG_UP |
 | BT1 | HUE+| SAT+| BRI+| SPD+|  FX+|  —  |  —  |  —  |  —  |  —  |  —  |  —  |  —          | PG_DN |
 | BT2 | HUE-| SAT-| BRI-| SPD-|  FX-|  —  |  —  |  —  |  —  |  —  |  —  |  —                |  DEL |
-| BT3 |  —  | BTCLR| BTCLR|  —  |  —  |  —  | MUTE|  —  |  —  |  —  |  —  |  —  | VOL↑        |  —   |
+| BT3 |  —  | BTCLR| BTCLR|  —  |  —  |  —  | MUTE|  —  |  —  |  —  |  —  |[CTRL]| VOL↑       |  —   |
 |STUDIO|RGBTOG|  —  | SPACE| PLAY/PAUSE | SPACE | RALT | RCTRL  | PREV | VOL↓ | NEXT |
 ```
 
@@ -63,12 +63,13 @@ RGB lighting controls and function keys. Access by holding the rightmost key in 
 - **RGB Controls**: Hue, saturation, brightness, speed, and effect cycling
 - **Media Controls**: Play/pause, previous/next track, mute
 - **STUDIO**: Unlock ZMK Studio mode for live editing
+- **[CTRL]**: Hold simultaneously with [RGB] to access the CONTROL layer
 
 **Encoder**: Volume Up/Down
 
 ### Layer 2: CONTROL
 
-System controls and advanced Bluetooth management. Access via combo keys (positions 60+61).
+System controls and advanced Bluetooth management. Access by holding **[RGB]** and **[CTRL]** (RSHFT position in row 4) simultaneously.
 
 ```
 | BT CLR | BT1 | BT2 | BT3 | BT4 | BT5 | OUT_BT | OUT_USB | STU |   –  |   –  |   –  |BOOTLDR|   –   |   –   |   –   |
@@ -212,10 +213,6 @@ west build -s zmk/app -b athena -- -DZMK_CONFIG="$(pwd)/config"
   - Storage: 128KB
   - Bootloader: 48KB
 
-## Combo Keys
-
-- **CONTROL Layer Access**: Press keys at positions 60 + 61 simultaneously (timeout: 50ms)
-
 ## Useful ZMK Resources
 
 ### Official Documentation
@@ -289,7 +286,7 @@ This configuration is provided as-is for the Athena keyboard. ZMK firmware itsel
 
 ## Additional Notes
 
-- **West Manifest**: This project uses the main ZMK branch and includes the `zmk-poor-mans-led-indicator` module for enhanced LED functionality
+- **West Manifest**: This project pins ZMK to v0.3.0 and includes the `zmk-poor-mans-led-indicator` module for enhanced LED functionality
 - **Studio RPC**: Configured via USB UART for ZMK Studio communication
 - **Reserved Layers**: Two extra layers are reserved for future ZMK Studio use
 
