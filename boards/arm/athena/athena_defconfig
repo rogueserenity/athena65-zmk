@@ -1,6 +1,9 @@
 # Keyboard display name
 CONFIG_ZMK_KEYBOARD_NAME="Athena"
 
+# Mark as ZMK-specific board (skips Zephyr 4.1 board compat check in CI)
+CONFIG_ZMK_BOARD_COMPAT=y
+
 # # Board configuration
 CONFIG_SOC_SERIES_NRF52X=y
 CONFIG_SOC_NRF52840_QIAA=y
