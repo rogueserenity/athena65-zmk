@@ -22,6 +22,7 @@
             bindings = <&kp ESC>, <&kp GRAVE>;
             mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+            display-name = "macOS Grave Escape";
         };
     };
 
@@ -39,7 +40,7 @@
             // ------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&gresc_cmd   &kp N1     &kp N2  &kp N3   &kp N4    &kp N5  &kp N6   &kp N7   &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp DEL               &kp PG_UP
+&mt TILDE ESC   &kp N1     &kp N2  &kp N3   &kp N4    &kp N5  &kp N6   &kp N7   &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp DEL               &kp PG_UP
 &kp TAB   &kp Q      &kp W    &kp E    &kp R     &kp T   &kp Y    &kp U    &kp I     &kp O    &kp P     &kp LBKT  &kp RBKT  &kp BSLH                            &kp PG_DN  
 &kp CLCK  &kp A      &kp S    &kp D    &kp F     &kp G   &kp H    &kp J    &kp K     &kp L    &kp SEMI  &kp SQT             &kp RET                             &kp DEL
 &kp LSHFT &kp BSLH   &kp Z    &kp X    &kp C     &kp V   &kp B    &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RSHFT  &kp UP                             &mo RGB
