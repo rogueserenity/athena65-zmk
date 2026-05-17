@@ -22,6 +22,7 @@
             bindings = <&kp ESC>, <&kp GRAVE>;
             mods = <(MOD_LSFT|MOD_RSFT|MOD_LGUI|MOD_RGUI)>;
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+            display-name = "macOS Grave Escape";
         };
     };
 
