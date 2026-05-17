@@ -13,3 +13,4 @@ supported:
   - pwm
   - watchdog
   - encoder
+qualifiers: nrf52840
